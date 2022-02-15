@@ -6,6 +6,17 @@ public class Search {
     // a target int is found in an array of ints (both the target and int array
     // should be accepted as parameters); return -1 if target is not found
     // BE SURE TO USE EARLY RETURN (more efficient)
+    public static int linearSearch(int[] intArray, int target)
+    {
+        for (int i = 0; i < intArray.length; i++)
+        {
+            if (intArray[i] == target)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
 
@@ -16,7 +27,17 @@ public class Search {
     // if target is not found
     // AGAIN, BE SURE TO USE EARLY RETURN
 
-
+    public static boolean otherLinearSearch(int[] intArray, int target)
+    {
+        for (int i = 0; i < intArray.length; i++)
+        {
+            if (intArray[i] == target)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
 
 
@@ -25,6 +46,17 @@ public class Search {
     // at which the target is found, or return -1 if target is not found
     // BE SURE TO USE EARLY RETURN
 
+    public static int linearSearch(ArrayList<Integer> intArray, int target)
+    {
+        for (int i = 0; i < intArray.size(); i++)
+        {
+            if (intArray.get(i) == target)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
 
@@ -34,7 +66,17 @@ public class Search {
     // or return -1 if target is not found
     // BE SURE TO USE EARLY RETURN
 
-
+    public static int linearSearch(String[] stringArray, String target)
+    {
+        for (int i = 0; i < stringArray.length; i++)
+        {
+            if (stringArray[i].equals(target))
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
 
@@ -42,7 +84,10 @@ public class Search {
     // target int, and return the LAST index at which the target is found,
     // or return -1 if target is not found
 
-
+    public static int linearSearchList(int[] intArray, int target)
+    {
+        
+    }
 
 
 
